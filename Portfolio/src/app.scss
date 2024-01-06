@@ -1,0 +1,59 @@
+/* -- Default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+} 
+/* Scrollbar Width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 6px;
+}
+body {
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@mixin mobile {
+    @media (max-width: 738px) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin desktop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+}

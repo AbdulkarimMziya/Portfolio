@@ -1,0 +1,100 @@
+@import "../../app.scss";
+
+.contact {
+  height: 100%;
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mobile {
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 70px;
+    }
+
+  
+
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+
+      @include mobile {
+        font-size: 36px;
+        line-height: normal;
+      }
+      
+    }
+
+    span {
+      font-weight: 300;
+    }
+    .item:last-child span a{
+      @include mobile {
+        margin: 5px 15px;
+      }
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    position: relative;
+
+    @include mobile {
+      bottom: 5%;
+      padding: 10px;
+      width: 100%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+
+        @include mobile {
+          padding: 10px;
+        }
+
+      }
+
+      button {
+        padding: 20px;
+        border: 4px solid transparent;
+        background: linear-gradient(#0c0c1d, #1d4978) padding-box,
+        linear-gradient(to right, darkblue, rgb(222, 213, 226)) border-box;
+        border-radius: 50em;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+
+        @include mobile {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
