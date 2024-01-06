@@ -37,7 +37,7 @@ This project is a personal portfolio website built using React and Vite. It show
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/your-username/your-project.git`
+1. Clone the repository: `git clone https://github.com/AbdulkarimMziya/Web_Porfolio.git`
 2. Install dependencies: `npm install`
 3. Run the development server: `npm run dev`
 4. Open your browser and go to `http://localhost:5173/` to view the app.
